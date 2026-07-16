@@ -1,5 +1,7 @@
 # Simulación y visualización de zonas inundadas - Liberia, CR
 
+Visor geografico link:  https://asoto59g.github.io/Liberia_Hydro/
+
 Proyecto para:
 - Preprocesar insumos geoespaciales (DEM, perímetro y rugosidad de Manning)
 - Generar capas hidráulicas derivadas (slope, flow direction, flow accumulation, velocidad y caudal)

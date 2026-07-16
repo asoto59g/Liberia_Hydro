@@ -1,0 +1,26 @@
+python C:\git\hydro.py `
+  --input-dir "C:\git" `
+  --output-dir "C:\git\out\hydro" `
+  --depth 0.10 `
+  --assume-same-crs `
+  --fill-sinks-iters 5 `
+  --use-numba
+
+
+python C:\git\flood_frames.py `
+  --input-dir "C:\git\out\hydro" `
+  --output-dir "C:\git\out\anim_flood_300" `
+  --n-frames 300 `
+  --depth-min 0.00 `
+  --depth-max 0.40 `
+  --min-visible-depth 0.005 `
+  --w-flowacc 0.55 `
+  --w-terrain 0.30 `
+  --w-slope 0.15 `
+  --gamma 1.4 `
+  --growth-exp 1.8 `
+  --front-exp 1.3
+
+
+
+.\build_video.ps1 -FramesDir "C:\git\out\anim_flood_300\frames" -OutVideo "C:\git\out\anim_flood_300\flood_anim.mp4" -Fps 30 -Crf 20 -Preset slow

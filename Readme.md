@@ -40,7 +40,4 @@ Comando usado:
 ```powershell
 .\build_video.ps1 -FramesDir "C:\git\out\anim_flood_300\frames" -OutVideo "C:\git\out\anim_flood_300\flood_anim.mp4" -Fps 30 -Crf 20 -Preset slow
 
-### Imagen
-- 
-<img width="335" height="480" alt="image" src="https://github.com/user-attachments/assets/ddebc51c-15ba-4b2d-b470-353e473ab7a7" />
 

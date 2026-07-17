@@ -1,4 +1,39 @@
-"C:\git\"  o su propio directorio
+Para activar entorno en C:\git debe ser creado anteriormente
+
+.\.venv\Scripts\Activate.ps1
+
+o
+.venv\Scripts\actívate
+
+o
+
+.venv\Scripts\activate.bat
+
+Para crear entorno desde cero se para directorio donde se va crear  C:\git
+
+python -m venv .venv
+
+Esto creara algo asi: 
+
+C:\git
+│
+├── .venv
+│   ├── Include
+│   ├── Lib
+│   ├── Scripts
+│   │   ├── activate
+│   │   ├── activate.bat
+│   │   ├── Activate.ps1
+│   │   ├── deactivate.bat
+│   │   ├── pip.exe
+│   │   └── python.exe
+│   └── pyvenv.cfg
+
+Luego cargar requirements.txt con:
+
+pip install -r requirements.txt
+
+
 
 
 
@@ -6,7 +41,8 @@ python C:\git\hydro.py `
   --input-dir "C:\git" `
   --output-dir "C:\git\out\hydro" `
   --depth 0.10 `
-  --assume-same-crs `
+  --dem-crs EPSG:5367 `
+  --manning-crs EPSG:5367 `
   --fill-sinks-iters 5 `
   --use-numba
 

@@ -32,6 +32,9 @@ Proyecto para:
   - Simula evolución temporal de lámina de agua
   - Renderiza frames PNG con color por velocidad
   - Exporta `metrics.csv` y opcionalmente rasters por frame
+ 
+    <img width="335" height="480" alt="image" src="https://github.com/user-attachments/assets/3fac4960-eca8-4a98-a216-7a8eb14573fe" />
+
 
 ### Construcción de video
 - `build_video.ps1` (usa `ffmpeg`)
@@ -40,6 +43,5 @@ Comando usado:
 ```powershell
 .\build_video.ps1 -FramesDir "C:\git\out\anim_flood_300\frames" -OutVideo "C:\git\out\anim_flood_300\flood_anim.mp4" -Fps 30 -Crf 20 -Preset slow
 
-- `imagen`
-<img width="335" height="480" alt="image" src="https://github.com/user-attachments/assets/e50bd6b2-9c38-485b-92e5-00ec4b57cec2" />
+
 

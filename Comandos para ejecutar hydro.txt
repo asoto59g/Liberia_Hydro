@@ -1,4 +1,4 @@
-C:\git\ o su propio directorio
+"C:\git\"  o su propio directorio
 
 
 

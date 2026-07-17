@@ -1,3 +1,7 @@
+C:\git\ o su propio directorio
+
+
+
 python C:\git\hydro.py `
   --input-dir "C:\git" `
   --output-dir "C:\git\out\hydro" `
